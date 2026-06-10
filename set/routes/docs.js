@@ -18,8 +18,8 @@ export const createDocsHandler = (buildUrl) => {
         const exampleList = [
             { label: '获取歌曲', url: `${baseUrl}?server=tencent&type=song&id=001s7VHs4KJR5f` },
             { label: '获取歌单', url: `${baseUrl}?server=tencent&type=playlist&id=8664505249` },
-            { label: '搜索歌曲', url: `${baseUrl}?server=netease&type=search&id=周杰伦` },
-            { label: '获取歌词', url: `${baseUrl}?server=netease&type=lrc&id=1901371647` },
+            { label: '搜索歌曲', url: `${baseUrl}?server=netease&type=search&id=林俊杰` },
+            { label: '获取歌词', url: `${baseUrl}?server=netease&type=lrc&id=37460590` },
             { label: '获取歌手', url: `${baseUrl}?server=netease&type=artist&id=6452` }
         ];
 

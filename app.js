@@ -117,7 +117,7 @@ app.notFound((c) => {
         path: c.req.path,
         availableEndpoints: {
             home: '/',
-            api: '/api?server=netease&type=song&id=1901371647',
+            api: '/api?server=netease&type=song&id=37460590',
             stats: '/stats',
             health: '/health',
             docs: '/docs',

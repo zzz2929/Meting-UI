@@ -138,7 +138,7 @@ export const apiHandler = async (c) => {
             message: 'server 参数不合法',
             param: { server, type, id },
             validServers: ['netease', 'tencent', 'kugou'],
-            example: buildUrl(c, '/api?server=netease&type=song&id=1901371647')
+            example: buildUrl(c, '/api?server=netease&type=song&id=37460590')
         });
     }
     if (!['song', 'album', 'search', 'artist', 'playlist', 'lrc', 'url', 'pic'].includes(type)) {

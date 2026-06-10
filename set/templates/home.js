@@ -918,11 +918,11 @@ export const generateHomePage = (data) => {
                 <div style="margin-top: 1rem; color: var(--text-secondary);">
                     <strong>快速示例：</strong>
                     <div class="example-buttons">
-                        <button class="btn-example" onclick="loadExample('netease', 'song', '1901371647')">🎵 网易云歌曲</button>
-                        <button class="btn-example" onclick="loadExample('tencent', 'search', '周杰伦')">🔍 QQ音乐搜索</button>
+                        <button class="btn-example" onclick="loadExample('netease', 'song', '37460590')">🎵 网易云歌曲</button>
+                        <button class="btn-example" onclick="loadExample('tencent', 'search', '林俊杰')">🔍 QQ音乐搜索</button>
                         <button class="btn-example" onclick="loadExample('kugou', 'url', 'b3a52a7a958bf0aed0ebfba2e9a818b7')">▶️ 酷狗播放</button>
                         <button class="btn-example" onclick="loadExample('spotify', 'song', '0Hyy7tYKo4Duk')">🎧 Spotify</button>
-                        <button class="btn-example" onclick="loadExample('netease', 'playlist', '7512726744')">📜 网易云歌单</button>
+                        <button class="btn-example" onclick="loadExample('netease', 'playlist', '12326881102')">📜 网易云歌单</button>
                     </div>
                 </div>
             </div>

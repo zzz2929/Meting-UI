@@ -127,7 +127,7 @@ GET /api?server={平台}&type={类型}&id={ID}
 
 ```bash
 # 网易云音乐
-curl "http://localhost:2500/api?server=netease&type=song&id=1901371647"
+curl "http://localhost:2500/api?server=netease&type=song&id=37460590"
 
 # QQ音乐
 curl "http://localhost:2500/api?server=tencent&type=song&id=001OyHbk2MSIi4"
@@ -139,19 +139,19 @@ curl "http://localhost:2500/api?server=kugou&type=song&id=b3a52a7a958bf0aed0ebfb
 #### 获取歌曲播放地址
 
 ```bash
-curl "http://localhost:2500/api?server=netease&type=url&id=1901371647"
+curl "http://localhost:2500/api?server=netease&type=url&id=37460590"
 ```
 
 #### 获取歌词
 
 ```bash
-curl "http://localhost:2500/api?server=netease&type=lrc&id=1901371647"
+curl "http://localhost:2500/api?server=netease&type=lrc&id=37460590"
 ```
 
 #### 获取歌单
 
 ```bash
-curl "http://localhost:2500/api?server=netease&type=playlist&id=7512726744"
+curl "http://localhost:2500/api?server=netease&type=playlist&id=12326881102"
 ```
 
 #### 搜索歌曲
@@ -161,7 +161,7 @@ curl "http://localhost:2500/api?server=netease&type=playlist&id=7512726744"
 curl "http://localhost:2500/api?server=netease&type=search&id=起风了"
 
 # 酷狗音乐
-curl "http://localhost:2500/api?server=kugou&type=search&id=周杰伦"
+curl "http://localhost:2500/api?server=kugou&type=search&id=林俊杰"
 ```
 
 ### 响应格式
@@ -173,7 +173,7 @@ curl "http://localhost:2500/api?server=kugou&type=search&id=周杰伦"
   "error": false,
   "data": [
     {
-      "id": "1901371647",
+      "id": "37460590",
       "name": "歌曲名称",
       "artist": ["歌手名"],
       "album": "专辑名",
@@ -223,13 +223,13 @@ function generateToken(server, type, id, secret) {
     return crypto.createHmac('sha256', secret).update(str).digest('hex');
 }
 
-const token = generateToken('netease', 'url', '1901371647', 'meting');
+const token = generateToken('netease', 'url', '37460590', 'meting');
 ```
 
 请求示例：
 
 ```bash
-curl "http://localhost:2500/api?server=netease&type=url&id=1901371647&token=${token}"
+curl "http://localhost:2500/api?server=netease&type=url&id=37460590&token=${token}"
 ```
 
 ## 数据库配置（可选）
